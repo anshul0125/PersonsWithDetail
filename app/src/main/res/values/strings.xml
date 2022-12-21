@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PersonsWithDetail</string>
+    <string name="name">Name:- </string>
+    <string name="followers">Followers:-</string>
+    <string name="followings">Followings:-</string>
+    <string name="login">Login:</string>
+
+</resources>
