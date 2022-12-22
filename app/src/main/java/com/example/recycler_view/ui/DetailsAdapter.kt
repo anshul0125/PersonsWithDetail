@@ -8,11 +8,11 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.recycler_view.network.model.User
 
-class DetailsAdapter(val context: Context, val detailItems: MutableList<DetailsItem>, val listener: OnItemListener) :
+class DetailsAdapter(val context: Context, val detailItems: MutableList<User>, val listener: OnItemListener) :
     RecyclerView.Adapter<DetailsAdapter.DetailViewHolder>() {
 
     class DetailViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -51,5 +51,5 @@ class DetailsAdapter(val context: Context, val detailItems: MutableList<DetailsI
 }
 
 interface OnItemListener{
-    fun onItemCLick(position: Int, item: DetailsItem)
+    fun onItemCLick(position: Int, item: User)
 }
